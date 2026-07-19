@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,18 +12,26 @@
 
     <header>
         <h1>Coastal Bend Soap Gallery</h1>
-        <p>Handmade soaps created with care and natural ingredients</p>
+        <p>Handmade soaps crafted with natural ingredients and care</p>
     </header>
+
 
     <main>
 
-        <img src="images/soaps.jpg" alt="Coastal Bend handmade soaps" class="main-image">
+        <img src="images/soaps.jpg" 
+             alt="Coastal Bend handmade soaps"
+             class="soap-image">
 
-        <section>
+
+        <section class="quiz">
+
             <h2>Find Your Perfect Soap</h2>
-            <p>Answer a few questions and discover which soap fits your style!</p>
+
+            <p>Answer a few questions to find the soap that matches you!</p>
+
 
             <label for="skin">What is your skin type?</label>
+
             <select id="skin">
                 <option value="dry">Dry Skin</option>
                 <option value="normal">Normal Skin</option>
@@ -30,27 +39,38 @@
                 <option value="sensitive">Sensitive Skin</option>
             </select>
 
+
             <br><br>
 
-            <label for="scent">What scent do you prefer?</label>
+
+            <label for="scent">What scent do you like?</label>
+
             <select id="scent">
-                <option value="fresh">Fresh & Clean</option>
+                <option value="fresh">Fresh</option>
                 <option value="floral">Floral</option>
                 <option value="sweet">Sweet</option>
                 <option value="earthy">Earthy</option>
             </select>
 
+
             <br><br>
 
-            <button onclick="findSoap()">Find My Soap</button>
+
+            <button onclick="findSoap()">
+                Find My Soap
+            </button>
+
 
             <h3 id="result"></h3>
 
         </section>
 
+
     </main>
 
-    <script src="script.js"></script>
+
+<script src="script.js"></script>
 
 </body>
+
 </html>
