@@ -3,37 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Question 1</title>
+    <title>Question 1 - Coastal Bend Soap Quiz</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-
-<h1>Question 1 of 10</h1>
-
+    <h1>Coastal Bend Soap Quiz</h1>
+    <p>Question 1 of 10</p>
 </header>
 
 <main>
 
-<div class="question-box">
+    <div class="question-box">
 
-<h2>Are you...</h2>
+        <h2>Are you male or female?</h2>
 
-<button onclick="selectGender('male')">
-Male
-</button>
+        <button onclick="selectGender('male')">
+            Male
+        </button>
 
-<button onclick="selectGender('female')">
-Female
-</button>
+        <br><br>
 
-</div>
+        <button onclick="selectGender('female')">
+            Female
+        </button>
+
+    </div>
 
 </main>
 
-<script src="script.js"></script>
+<script>
+
+function selectGender(gender) {
+
+    let scores = JSON.parse(sessionStorage.getItem("soapScores"));
+
+    if (!scores) {
+
+        scores = {
+            perfectMan: 0,
+            turtleBeach: 0,
+            coffeeShop: 0,
+            lavender: 0,
+            shellSeeker: 0,
+            oatmealMilkHoney: 0,
+            bourbonVanilla: 0,
+            crazyForCoconut: 0
+        };
+
+    }
+
+    if (gender === "male") {
+
+        scores.perfectMan += 1;
+        scores.turtleBeach += 1;
+        scores.coffeeShop += 1;
+        scores.bourbonVanilla += 1;
+
+    }
+
+    if (gender === "female") {
+
+        scores.lavender += 1;
+        scores.shellSeeker += 1;
+        scores.oatmealMilkHoney += 1;
+        scores.crazyForCoconut += 1;
+
+    }
+
+    sessionStorage.setItem(
+        "soapScores",
+        JSON.stringify(scores)
+    );
+
+    alert("Answer saved!");
+
+    // Later this will go to question2.html
+    console.log(scores);
+
+}
+
+</script>
 
 </body>
 </html>
