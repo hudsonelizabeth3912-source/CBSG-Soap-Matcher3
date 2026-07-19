@@ -1,11 +1,35 @@
-document.addEventListener("DOMContentLoaded", function () {
+// Coastal Bend Soap Gallery Quiz Script
 
-    const startButton = document.getElementById("startButton");
+// Creates the starting score system
+function createScores() {
 
-    if (startButton) {
-        startButton.addEventListener("click", function () {
-            window.location.href = "question1.html";
-        });
+    let scores = {
+        perfectMan: 0,
+        turtleBeach: 0,
+        coffeeShop: 0,
+        lavender: 0,
+        shellSeeker: 0,
+        oatmealMilkHoney: 0,
+        bourbonVanilla: 0,
+        crazyForCoconut: 0
+    };
+
+    sessionStorage.setItem(
+        "soapScores",
+        JSON.stringify(scores)
+    );
+
+}
+
+
+// Runs when the website loads
+window.onload = function() {
+
+    // Only create scores if they don't already exist
+    if (!sessionStorage.getItem("soapScores")) {
+
+        createScores();
+
     }
 
-});
+};
