@@ -4,27 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coastal Bend Soap Gallery</title>
-
     <link rel="stylesheet" href="style.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<div class="container">
+    <header>
+        <h1>Coastal Bend Soap Gallery</h1>
+        <p>Handmade soaps created with care and natural ingredients</p>
+    </header>
 
-<img src="images/coastal-bend-logo.jpg" alt="Coastal Bend Soap Gallery Logo">
+    <main>
 
-    <p class="intro">
-        Discover which handcrafted Coastal Bend soap matches your personality.
-    </p>
+        <img src="images/soaps.jpg" alt="Coastal Bend handmade soaps" class="main-image">
 
-    <button id="startButton">Start the Quiz</button>
+        <section>
+            <h2>Find Your Perfect Soap</h2>
+            <p>Answer a few questions and discover which soap fits your style!</p>
 
-</div>
+            <label for="skin">What is your skin type?</label>
+            <select id="skin">
+                <option value="dry">Dry Skin</option>
+                <option value="normal">Normal Skin</option>
+                <option value="oily">Oily Skin</option>
+                <option value="sensitive">Sensitive Skin</option>
+            </select>
 
-<script src="script.js"></script>
+            <br><br>
+
+            <label for="scent">What scent do you prefer?</label>
+            <select id="scent">
+                <option value="fresh">Fresh & Clean</option>
+                <option value="floral">Floral</option>
+                <option value="sweet">Sweet</option>
+                <option value="earthy">Earthy</option>
+            </select>
+
+            <br><br>
+
+            <button onclick="findSoap()">Find My Soap</button>
+
+            <h3 id="result"></h3>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
