@@ -1,43 +1,100 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #fff7ef;
     text-align: center;
-    background-color: #fff8f0;
     margin: 0;
-    padding: 20px;
+    padding: 0;
 }
 
+
 header {
-    padding: 20px;
+    background-color: #f3d8b5;
+    padding: 30px;
 }
+
 
 h1 {
     color: #6b4226;
+    font-size: 40px;
 }
 
-.main-image {
+
+p {
+    font-size: 18px;
+}
+
+
+main {
+    padding: 20px;
+}
+
+
+.soap-image {
+
     width: 80%;
-    max-width: 600px;
-    border-radius: 10px;
-    margin: 20px;
+    max-width: 650px;
+
+    border-radius: 15px;
+
+    margin-top: 25px;
+
 }
 
-section {
-    background: white;
-    padding: 25px;
-    border-radius: 10px;
+
+.quiz {
+
+    background-color: white;
+
     max-width: 500px;
-    margin: auto;
+
+    margin: 30px auto;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
 }
+
+
+select {
+
+    padding: 10px;
+
+    font-size: 16px;
+
+}
+
 
 button {
+
     background-color: #6b4226;
+
     color: white;
-    padding: 12px 20px;
+
     border: none;
-    border-radius: 5px;
+
+    padding: 12px 25px;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
     cursor: pointer;
+
 }
 
+
 button:hover {
-    opacity: 0.8;
+
+    opacity: .8;
+
+}
+
+
+#result {
+
+    color: #6b4226;
+
+    margin-top: 20px;
+
 }
