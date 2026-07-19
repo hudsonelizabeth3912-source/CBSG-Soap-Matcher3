@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,40 +9,34 @@
 
 <body>
 
-    <header>
-        <h1>Coastal Bend Soap Gallery</h1>
-        <p>Handmade soaps crafted with natural ingredients and care</p>
-    </header>
+<header>
+    <h1>Coastal Bend Soap Gallery</h1>
+    <p>Find the handmade soap that matches your personality.</p>
+</header>
 
+<main>
 
-    <main>
+    <img src="images/soaps.jpg"
+         alt="Handmade Soaps"
+         class="soap-image">
 
-        <img src="images/soaps.jpg" 
-             alt="Coastal Bend handmade soaps" 
-             class="soap-image">
+    <section class="welcome">
 
+        <h2>Welcome!</h2>
 
-        <div class="welcome">
+        <p>
+            Answer 10 fun personality questions and we'll match you with the Coastal Bend Soap Gallery soap that's perfect for you.
+        </p>
 
-            <h2>Find Your Perfect Soap</h2>
+        <button onclick="startQuiz()">
+            Start Quiz
+        </button>
 
-            <p>
-                Discover the handmade soap that fits your personality and matches your unique style.
-            </p>
+    </section>
 
+</main>
 
-            <button onclick="startQuiz()">
-                Start
-            </button>
-
-        </div>
-
-
-    </main>
-
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
-
 </html>
