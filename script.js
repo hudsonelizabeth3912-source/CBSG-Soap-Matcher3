@@ -3,7 +3,7 @@
 // ----------------------
 
 function startQuiz() {
-    window.location.href = "quiz.html";
+    window.location.href = "question1.html";
 }
 
 
