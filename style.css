@@ -1,118 +1,81 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #fff7ef;
+    background-color: #fff8f0;
     text-align: center;
     margin: 0;
-    padding: 0;
+    padding: 20px;
 }
 
 
-/* Header */
-
 header {
-    background-color: #f3d8b5;
-    padding: 30px;
+    padding: 20px;
 }
 
 
 h1 {
     color: #6b4226;
-    font-size: 40px;
-    margin-bottom: 10px;
+    font-size: 36px;
 }
 
 
 header p {
     font-size: 18px;
-    color: #4a3425;
+    color: #555;
 }
 
-
-
-/* Main area */
 
 main {
-    padding: 30px;
+    margin-top: 20px;
 }
 
-
-
-/* Soap image */
 
 .soap-image {
-
     width: 80%;
-
-    max-width: 650px;
-
-    border-radius: 15px;
-
-    margin-top: 20px;
-
+    max-width: 600px;
+    border-radius: 10px;
+    margin: 20px;
 }
 
-
-
-/* Welcome section */
 
 .welcome {
-
     background-color: white;
-
-    max-width: 550px;
-
-    margin: 30px auto;
-
-    padding: 30px;
-
-    border-radius: 15px;
-
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 10px;
 }
-
 
 
 .welcome h2 {
-
     color: #6b4226;
-
-    font-size: 28px;
-
 }
-
 
 
 .welcome p {
-
-    font-size: 18px;
-
+    font-size: 17px;
     line-height: 1.5;
-
 }
 
 
-
-/* Start Quiz button */
+/* Start Quiz Button */
 
 .start-button {
 
     display: inline-block;
-
     background-color: #6b4226;
-
     color: white;
 
-    padding: 14px 35px;
+    padding: 12px 25px;
 
-    border-radius: 8px;
+    border-radius: 5px;
 
     text-decoration: none;
 
-    font-size: 18px;
+    font-size: 16px;
 
-    margin-top: 20px;
+    margin-top: 15px;
 
 }
-
 
 
 .start-button:hover {
@@ -122,36 +85,22 @@ main {
 }
 
 
-
-/* Quiz question pages */
+/* Quiz pages */
 
 .question-box {
 
     background-color: white;
 
-    max-width: 550px;
+    max-width: 500px;
 
-    margin: 50px auto;
+    margin: 30px auto;
 
-    padding: 35px;
+    padding: 25px;
 
-    border-radius: 15px;
-
-}
-
-
-
-.question-box h2 {
-
-    color: #6b4226;
-
-    font-size: 28px;
+    border-radius: 10px;
 
 }
 
-
-
-/* Answer buttons */
 
 button {
 
@@ -161,18 +110,15 @@ button {
 
     border: none;
 
-    padding: 14px 30px;
+    padding: 12px 25px;
 
-    border-radius: 8px;
+    border-radius: 5px;
 
-    font-size: 18px;
+    font-size: 16px;
 
     cursor: pointer;
 
-    margin: 10px;
-
 }
-
 
 
 button:hover {
